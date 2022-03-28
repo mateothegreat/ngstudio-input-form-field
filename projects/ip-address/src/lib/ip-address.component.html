@@ -1,0 +1,49 @@
+<div class="wrapper">
+
+    <form [formGroup]="formGroup">
+
+        <div class="input">
+
+            <input formControlName="octet1"
+                   maxlength="3"
+                   [class.error]="formGroup.get('octet1').dirty && !formGroup.get('octet1').valid"
+                   [placeholder]="config.placeholders[0]">
+
+        </div>
+
+        <div class="dot">.</div>
+
+        <div class="input">
+
+            <input formControlName="octet2"
+                   maxlength="3"
+                   [class.error]="formGroup.get('octet2').dirty && !formGroup.get('octet2').valid"
+                   [placeholder]="config.placeholders[1]">
+
+        </div>
+
+        <div class="dot">.</div>
+
+        <div class="input">
+
+            <input formControlName="octet3"
+                   maxlength="3"
+                   [class.error]="formGroup.get('octet3').dirty && !formGroup.get('octet3').valid"
+                   [placeholder]="config.placeholders[2]">
+
+        </div>
+
+        <div class="dot">.</div>
+
+        <div class="input">
+
+            <input formControlName="octet4"
+                   maxlength="3"
+                   [class.error]="formGroup.get('octet4').dirty && !formGroup.get('octet4').valid"
+                   [placeholder]="config.placeholders[3]">
+
+        </div>
+
+    </form>
+
+</div>

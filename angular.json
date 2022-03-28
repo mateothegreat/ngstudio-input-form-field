@@ -127,6 +127,37 @@
           }
         }
       }
+    },
+    "ip-address": {
+      "projectType": "library",
+      "root": "projects/ip-address",
+      "sourceRoot": "projects/ip-address/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ip-address/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ip-address/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ip-address/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ip-address/src/test.ts",
+            "tsConfig": "projects/ip-address/tsconfig.spec.json",
+            "karmaConfig": "projects/ip-address/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "ngstudio-input-ip-address"

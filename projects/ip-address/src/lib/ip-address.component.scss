@@ -1,0 +1,36 @@
+:host {
+
+    .wrapper {
+
+        form {
+
+            display: flex;
+
+            input {
+
+                width: 30px;
+                text-align: center;
+                outline: none;
+                font-size: 15px;
+                padding: 5px;
+
+            }
+
+            .dot {
+
+                margin: 3px;
+                font-size: 22px;
+
+            }
+
+        }
+
+        .error {
+
+            border: 1px solid red;
+
+        }
+
+    }
+
+}
